@@ -1,0 +1,9 @@
+wordpress:
+        StorageClassName: ""
+        volCapacity: "2Gi"
+        type: "LoadBalancer"      
+        strategy:
+            type: "Recreate"
+        mounthPath: "/var/www/html"
+        image: "wordpress:4.8-apache"
+        containerPort: 80
